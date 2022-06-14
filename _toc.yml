@@ -12,6 +12,7 @@ entries:
       entries:
       - file: docs/platform/concepts/authentication-tokens
       - file: docs/platform/concepts/billing
+         - file: docs/platform/howto/tax-information.rst
       - file: docs/platform/concepts/beta_services
       - file: docs/platform/concepts/cloud-security
       - file: docs/platform/concepts/logs-metrics-alerts
