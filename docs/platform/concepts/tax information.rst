@@ -1,5 +1,5 @@
 Tax information regarding Aiven services
-=========================================
+========================================
 
 Aiven services are provided by Aiven Ltd, a private limited company incorporated in Finland. 
 This article describes our tax status in different jurisdictions. 
@@ -21,23 +21,26 @@ No value-added tax is applied to services sold outside the European Union as des
 Finland has tax treaties with most countries in the world affirming this status.
 
 United States
---------------
+-------------
 
 According to the tax treaty between Finland and United States no tax needs to be withhold from payments by US entities to Aiven. 
 Although we believe a W-8 form is not required to confirm this status, we're happy to provide a W-8BEN-E form describing our status if needed.  
-Please contact our sales department to request one.
+Please contact our `sales <sales@aiven.io>`_ to request one. 
 
-Updateding your tax status
---------------------------
+Updating your tax status
+------------------------
 
 Billing information can be set by Aiven users in the console. 
 
-How to do that
-1. In the console, on the left side navigate to Billing. 
-2. Go to Billing Information section.
-3. Scroll to Billing Profile. Here you can update your VAT ID. 
+Follow these steps:
+1. In the console, on the left side navigate to **Billing**. 
+2. Go to **Billing Information** section.
+3. Scroll to **Billing Profile**. Here you can update your VAT ID. 
 
-Please be aware, that you can set up Billing profile per project or create a Billing Group if you want to group costs and consolidate invoices by different business units.
-For futher information please refer to Billing Groups here https://help.aiven.io/en/articles/4693636-billing-groups. 
+.. important::
+
+    Please be aware that you can set up Billing profile per project or create a Billing Group if you want to group costs and consolidate invoices by different business units.
+    For futher information please refer to `Billing Groups <https://help.aiven.io/en/articles/4693636-billing-groups>`_. 
+
 Once the billing country has been updated in the billing section, it will be used in all future invoices. 
 Billing estimates are updated approximately once an hour, so it may take up to an hour for the new tax status to become visible on the invoice estimates.
