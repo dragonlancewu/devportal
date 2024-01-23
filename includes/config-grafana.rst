@@ -1,4 +1,12 @@
 
+``additional_backup_regions``
+-----------------------------
+*array*
+
+**Additional Cloud Regions for Backup Replication** 
+
+
+
 ``custom_domain``
 -----------------
 *['string', 'null']*
@@ -12,6 +20,14 @@
 *array*
 
 **IP filter** Allow incoming connections from CIDR address block, e.g. '10.20.0.0/16'
+
+
+
+``service_log``
+---------------
+*['boolean', 'null']*
+
+**Service logging** Store logs for the service so that they are available in the HTTP API and console.
 
 
 
@@ -119,6 +135,14 @@
 
 
 
+``oauth_allow_insecure_email_lookup``
+-------------------------------------
+*boolean*
+
+**Enforce user lookup based on email instead of the unique ID provided by the IdP** 
+
+
+
 ``auth_generic_oauth``
 ----------------------
 *object*
@@ -154,6 +178,12 @@
 *string*
 
 **Authorization URL** 
+
+``auto_login``
+~~~~~~~~~~~~~~
+*boolean*
+
+**Allow users to bypass the login screen and automatically log in** 
 
 ``client_id``
 ~~~~~~~~~~~~~
@@ -231,6 +261,12 @@
 
 **Automatically sign-up users on successful sign-in** 
 
+``auto_login``
+~~~~~~~~~~~~~~
+*boolean*
+
+**Allow users to bypass the login screen and automatically log in** 
+
 ``client_id``
 ~~~~~~~~~~~~~
 *string*
@@ -254,6 +290,12 @@
 *array*
 
 **Require users to belong to one of given organizations** 
+
+``skip_org_role_sync``
+~~~~~~~~~~~~~~~~~~~~~~
+*boolean*
+
+**Stop automatically syncing user roles** 
 
 
 
@@ -483,7 +525,7 @@
 --------------------
 *boolean*
 
-**Enable or disable Grafana alerting functionality** 
+**Enable or disable Grafana legacy alerting functionality. This should not be enabled with unified_alerting_enabled.** 
 
 
 
@@ -524,6 +566,14 @@
 *boolean*
 
 **Send 'X-Grafana-User' header to data source** 
+
+
+
+``dashboard_previews_enabled``
+------------------------------
+*boolean*
+
+**Enable browsing of dashboards in grid (pictures) mode** This feature is new in Grafana 9 and is quite resource intensive. It may cause low-end plans to work more slowly while the dashboard previews are rendering.
 
 
 
@@ -612,6 +662,14 @@
 *string*
 
 **Default time zone for user preferences. Value 'browser' uses browser local time zone.** 
+
+
+
+``unified_alerting_enabled``
+----------------------------
+*boolean*
+
+**Enable or disable Grafana unified alerting functionality. By default this is enabled and any legacy alerts will be migrated on upgrade to Grafana 9+. To stay on legacy alerting, set unified_alerting_enabled to false and alerting_enabled to true. See https://grafana.com/docs/grafana/latest/alerting/set-up/migrating-alerts/ for more details.** 
 
 
 
